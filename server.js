@@ -1,6 +1,7 @@
 var http = require('http');
     url = require('url');
     router = require('./router');
+    port = 8888;
 
 function start(handle) {
     http.createServer(function(request, response){
@@ -12,7 +13,7 @@ function start(handle) {
 
         router.route(handle, pathname, query, response, request);
 
-    }).listen(8080);
+    }).listen(port);
 }
-console.log('server started on port 8080');
+console.log('server started on port' + port);
 exports.start = start;
