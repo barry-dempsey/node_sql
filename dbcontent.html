@@ -1,0 +1,35 @@
+<html>
+<head>
+    <style>
+        body {background-color: darkgray;}
+    </style>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <form action="/add" method="post">
+
+            <input type="text" name="content">
+            <input type="submit" value="Add Guest" />
+            </form>
+        <div>
+            <strong>Current bookings: </strong>
+            <pre>
+                DBCONTENT
+                          </pre>
+            </div>
+        <form action="/" method="get">
+            <input type="text" name="q">
+            <input type="submit" value="Filter by Lastname" />
+            </form>
+        <form action="/delete" method="get">
+            <input type="text" name="q">
+            <input type="submit" value="Cancel by booking name" />
+            </form>
+        <form action="/availability" method="get">
+            <input type="text" name="q">
+            <input type="submit" value="Available rooms">
+        </form>
+
+    </body>
+</html>
